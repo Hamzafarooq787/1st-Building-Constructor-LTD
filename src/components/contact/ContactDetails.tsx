@@ -1,4 +1,4 @@
-import { Headset, Phone, Mail, MapPin, ShieldCheck, Wrench, Receipt } from "lucide-react";
+import { Headset, Phone, MapPin, ShieldCheck, Wrench, Receipt } from "lucide-react";
 
 const AREAS = [
   "Central London",
@@ -44,19 +44,6 @@ export default function ContactDetails() {
               <br />
               Sat: 8:00 AM – 1:00 PM
             </span>
-          </div>
-        </div>
-
-        <div className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
-          <Mail className="w-5 h-5 text-brand-maroon mt-0.5 shrink-0" aria-hidden="true" />
-          <div className="flex flex-col">
-            <span className="text-xs uppercase tracking-wider text-gray-500">Direct Estimating Desk</span>
-            <a className="text-sm font-semibold text-gray-900 hover:text-brand-maroon transition-colors" href="mailto:john@1st-bc.com">
-              john@1st-bc.com
-            </a>
-            <a className="text-sm text-gray-500 hover:text-brand-maroon transition-colors" href="mailto:enquiries@1st-bc.com">
-              enquiries@1st-bc.com
-            </a>
           </div>
         </div>
 

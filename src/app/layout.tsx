@@ -54,10 +54,42 @@ const newsreader = Newsreader({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.1st-bc.com";
+const siteTitle = "1st Building Contractors Ltd | Build on Trust";
+const siteDescription =
+  "1st Building Contractors Ltd delivers premier new builds, extensions, loft conversions, structural works and groundworks across London and the Home Counties.";
+
 export const metadata: Metadata = {
-  title: "1st Building Contractors Ltd | Build on Trust",
-  description:
-    "1st Building Contractors Ltd delivers premier new builds, extensions, loft conversions, structural works and groundworks across London and the Home Counties.",
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
+  icons: {
+    icon: "/images/1st-building-contractors-site-icon-256x256.png",
+    shortcut: "/images/1st-building-contractors-site-icon-256x256.png",
+    apple: "/images/1st-building-contractors-site-icon-256x256.png",
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "1st Building Contractors Ltd",
+    images: [
+      {
+        url: "/images/1st-building-contractors-open-graph-1200x630.webp",
+        width: 1200,
+        height: 630,
+        alt: "1st Building Contractors Ltd",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/images/1st-building-contractors-open-graph-1200x630.webp"],
+  },
 };
 
 export default function RootLayout({
