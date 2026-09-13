@@ -5,32 +5,27 @@ import { ArrowRight } from "lucide-react";
 const PROJECTS = [
   {
     title: "New Build",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA1LbYNnoA7my9KGawWUQrnSb2tYGbUNehkjpSqzTPVGUGkRmkC-KtniaMR59I-6DmI2rud5tpovcw6f53Lb3YBtnEK9p3s_NurdDZD7S4cEHfS0lOk6g3p9lkFwcCzCmWWYZ5AioJr4AWDCicqqcALQwXkmb9CzofQ-mZO8hNuCMWvq1Sqs5qrRYWohTKDN8i8DIvOzXtbKEg6n3hY_igNTNF-k7MlrsPGcDD7PBfYPYDOZiRfsDzE",
+    image: "/images/recent-project-new-build.webp",
     alt: "New Build project",
   },
   {
     title: "Extension",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBC-1OfVt_9BATY-pOQ8E3EW5fv8qf1OeAlzNNTPpBXicAiRT7K6upsHJAbZoN9fG19zTw6X6RRBlpMOdfk5n0QCClhQMjJ6xTWQQy2v9LkUFmqqERE3VSELwrQN87SwaOREIcPj4NtWCJFK-ZHDYU0I15-NJKhwBXqru7L-daVjo2ExBkKp9PSuDs9ZvWcIg0RsYmn7SYrDm4cr6E7pyUgEhfJfMe_nfCoQ_3thAw5Em-pGIGyVRs9",
+    image: "/images/recent-project-extension.webp",
     alt: "Modern glass rear Extension",
   },
   {
     title: "Loft Conversion",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBL8lQ-G63KNT9cxhfEAxUo0Am6qxNhnEMYUwYuIPDj4OqQ9tBQ2naIsVF-nx4hYoTcj4nV4FeyqSNzFkYMtFXky4pSzDfEnfJQMUmH0RL84_I-Tt0P-jeYlGjDfAnJAlyFHOe2EXbH9ZksEiDSFnh5UPpGMKWxledDiK0wVaVWDR6h8_IQIsrICLeoEyG9u7aZZ8JNlDL9VEmoXJvKK-EWtKqoyYp0Ib361PgxhBkrU4Ws1mnmwlDN",
+    image: "/images/recent-project-loft-conversion.webp",
     alt: "Loft Dormer Conversion",
   },
   {
     title: "Structural Works",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAQqKH0mj2IFSPwzvGbMBKD9_RksdgoVkDTtw1UZtsHD66vSaUoskr5hIOd65eeTIGG7LPSO0M9UPNrmK9GxZrGHhBxNVEXrcsbLfcZlOzJjpdvSeaSX0w5UXvT1_7svXGRGzLMxGBhNmqhCM2PwZS5nKHXtBIXCBmx_3R-7ImoqTnqlGYaPGVq8eVAeE07Q5DAdAhFVfTMw5rCV9uppuoCU6sdPhFXLHpR7ve6d3HYJ-_ur0AQT-KJ",
+    image: "/images/recent-project-structural-works.webp",
     alt: "Structural steel and internal beam works",
   },
   {
     title: "Groundworks",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCnOuEPBBZXvEmHbCGzOwSCxuzkM36Vh8___0njR6551lSMR7VbosnNQGFEMhJuriXYeJ8Mpetn-ek5PY_YurKsYnP8tYkGT49qH66xvNa3osugbzcvTfJ21-9rxvYOvyI5tN4MVE1ceoTm9AaM_w4ikHZp9NpU7hKbj1-svhgWRefWn2YHsKF8oYUOr9Eq2a5Sw75ewwZmHUhdxwbrTqhK6WFVGJOhZnLXKMECeWk_D8vMhCyU309Y",
+    image: "/images/recent-project-groundworks.webp",
     alt: "Foundation and concrete trench Groundworks",
   },
 ];

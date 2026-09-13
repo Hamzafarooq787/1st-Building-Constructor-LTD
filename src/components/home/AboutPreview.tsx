@@ -73,7 +73,7 @@ export default function AboutPreview() {
               <div className="relative w-full h-[320px] sm:h-[400px] lg:h-[480px]">
                 <Image
                   alt="Modern British construction site meeting and craftsmanship, professional builders and project manager reviewing architectural blueprints on a bright contemporary home build site in London"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJIUnOiW5kADzJiELx90uFV5DY9EwS4PO8xS46mhSThWBBgtJhfGRGNs5Oo-kh_6CMAvjibZ96_Ghont_84ikfpR9bGBgxp5SSS59s14S_14pOj88Rs_7Myu09HHtn5RxgcqizcURRi7kk_Ku0ovLpTpYVdfohHSWPoKWnxUHy36EnVlCU5GTSdkdgsNocbhC_cY15dojSwTe-ibaaloq64BmmD7NKkV2QgrWnRNqDgs069ww33uxv"
+                  src="/images/about-preview.webp"
                   fill
                   className="object-cover object-center"
                   sizes="(min-width: 1024px) 50vw, 100vw"

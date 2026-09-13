@@ -7,24 +7,21 @@ const SERVICES = [
     title: "NEW BUILDS",
     description: "High quality new build homes, tailored to your needs, built to last.",
     icon: HomeIcon,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCGwntMduLGX6HZvt24wiqArVHFMv2xXdPMr0Sz7bcLy2OHrYwu3AUtvGB5JBx8fF1-FUls27DEZ3DjFVvv95GwJ-Gjx3QDKHechbJ-d6ty6rC8QJxMd7imuTu0UKcD-_5YE5DfZAj3JuCzaIW69Gl9jjG4jxeyhHia0vVGbizq01j511xbLoF-lXy25hqiozP_pe4lgAC6hPs9WNzOg3JsCJufi59zgHPcdXzXDpLXc93ugCdx_LvO",
+    image: "/images/new-builds.webp",
     alt: "New Builds modern white luxury residence",
   },
   {
     title: "EXTENSIONS",
     description: "Create more space and add value to your home with expertly built extensions.",
     icon: PanelsTopLeft,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCH3UfpSroVSJLxuFMbX713Av2H7diK7Wos2AMI3PIsht3AEpwQ248TNB_kaLrSCZabmt1-7u3--940igwK28t4q_em4tnF8Ve5RMgDHP6ltFyoAQab1tl6Ef9FcPpSwfESiba9i2pid7F3VlNO2hUkcFoB_C6LkS7r7HwMWPP35w7K1Wvf7DqeTLz9V8B6_F40ZanaHBnSP2wTtZJVA-KZ7g__URWIieEAmjrGL9anVXCAknhgLSwo",
+    image: "/images/extensions.webp",
     alt: "Glass rear brick extension with patio",
   },
   {
     title: "LOFT CONVERSIONS",
     description: "Transform your loft into beautiful, functional living space.",
     icon: ArrowUpFromLine,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAgAQnFMQdF0f1ptEX-MjHzn1xYsul7wPExNbmL80oM9vyKMFBAUg8hFhSOpW_piC8F2xo6vG2UFBxYtmWik0ljqss40UL4bH5yLX1ZZuJ2SJKh4nn-82HlcMQlgf_FSTnieiDvxvPNWqNH0E_tn9_StS-rHm2Kb6N-3IJAzC4K9vcf-zjtVxMp_b8ZdUGRxXvDqk2SAXG3fYaLYaPjcwpnX8Mzaoh1o_MY2_ZdXfDk1cujajT2U400",
+    image: "/images/loft-conversions.webp",
     alt: "Loft conversion with skylights and exposed wooden beams",
   },
   {
@@ -39,8 +36,7 @@ const SERVICES = [
     title: "GROUNDWORKS",
     description: "Foundations, drainage, site preparation and all aspects of groundworks.",
     icon: Shovel,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD-3uPfdWLn_N9yOMYgbjTW94TsHYDMLHwELs5XhRnd00KtShbiy9O40rrjNgoeH_cLz_t9gTukAlm5PEU2pHjIhhLuNoEgy96xhIcK1vbwDyzr1JjPOSdMdw4mexF8Qyzy5tHrlTshskbiNZ2Jd08MREUqohnGBis0hNGcq81ZuhnaneAy-x5_syBBlSmFgkSFuzWIy9I_cznYpXYbIK6TcLjxSu64ikkY0draB_zwadylTp29GaIP",
+    image: "/images/groundworks.webp",
     alt: "Groundworks excavator and site foundation preparation",
   },
 ];
@@ -70,15 +66,17 @@ export default function Services() {
                 key={service.title}
                 className="bg-white border border-gray-200 rounded-lg overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative h-40 sm:h-44 overflow-hidden">
-                  <Image
-                    alt={service.alt}
-                    src={service.image}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
-                  />
-                  <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-brand-maroon border-2 border-white flex items-center justify-center text-white shadow-md">
+                <div className="relative h-40 sm:h-44">
+                  <div className="absolute inset-0 overflow-hidden">
+                    <Image
+                      alt={service.alt}
+                      src={service.image}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-brand-maroon border-2 border-white flex items-center justify-center text-white shadow-md z-10">
                     <Icon className="w-5 h-5" aria-hidden="true" />
                   </div>
                 </div>

@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           alt="Luxury architectural extension at dusk with warm illuminated sliding glass doors"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIPO_J0PhnK9WThdsryiDvovJq_CVhDVtgF0lCHk3UljA8yzQecREj7iTQ6FM7YrNYAdfNIYY6z2a7IheWqVcXu02VN5-3pSFZwV8bmW_0tibTVgjmZ-1A_tlxm0KWOqgVC9ykUN5nP7S8Mq585yDMoPxdqq36XXfm3iqr-4A0H30o5WNTiS_O03jfVXED0F44qMFyblvG4Mpx5GQta8NXh35JP3ZubpxzTJyJox7JxV4Acr3t7fDT"
+          src="/images/luxury-rear-extension-hero.webp"
           fill
           className="object-cover object-center"
           priority
