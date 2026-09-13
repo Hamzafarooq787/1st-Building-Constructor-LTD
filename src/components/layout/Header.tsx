@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Phone, ArrowRight, Menu, X } from "lucide-react";
@@ -25,23 +26,15 @@ export default function Header() {
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main navigation bar */}
         <div className="flex items-center justify-between py-3.5">
-          <Link className="flex items-center gap-3 group" href="/">
-            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border-2 border-brand-maroon flex items-center justify-center relative p-1 transition-transform group-hover:scale-105">
-              <div className="w-full h-full bg-brand-maroon rounded-full flex flex-col items-center justify-center text-white leading-none">
-                <span className="font-extrabold text-[15px] tracking-tight">1st</span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-brand-maroon font-extrabold text-sm sm:text-base tracking-wider uppercase leading-none">
-                BUILDING
-              </span>
-              <span className="text-brand-maroon font-black text-xs sm:text-sm tracking-wider uppercase leading-tight">
-                CONTRACTORS LTD
-              </span>
-              <span className="text-[8px] sm:text-[9px] tracking-[0.22em] text-gray-600 font-semibold uppercase mt-0.5">
-                BUILD ON TRUST
-              </span>
-            </div>
+          <Link className="flex items-center group" href="/">
+            <Image
+              alt="1st Building Contractors Ltd"
+              src="/images/1st-building-contractors-logo-transparent-1180x356.webp"
+              width={1180}
+              height={356}
+              priority
+              className="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105"
+            />
           </Link>
 
           <nav

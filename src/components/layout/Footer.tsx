@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
@@ -16,23 +17,14 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-100 text-gray-700" data-purpose="site-footer">
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8 py-7">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <Link className="flex items-center gap-3 group" href="/">
-            <div className="w-11 h-11 rounded-full border-2 border-brand-maroon flex items-center justify-center p-0.5">
-              <div className="w-full h-full bg-brand-maroon rounded-full flex items-center justify-center text-white">
-                <span className="font-extrabold text-sm">1st</span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-brand-maroon font-extrabold text-sm tracking-wider uppercase leading-none">
-                BUILDING
-              </span>
-              <span className="text-brand-maroon font-black text-xs tracking-wider uppercase leading-tight">
-                CONTRACTORS LTD
-              </span>
-              <span className="text-[8px] tracking-[0.2em] text-gray-500 font-semibold uppercase">
-                BUILD ON TRUST
-              </span>
-            </div>
+          <Link className="flex items-center group" href="/">
+            <Image
+              alt="1st Building Contractors Ltd"
+              src="/images/1st-building-contractors-logo-transparent-1180x356.webp"
+              width={1180}
+              height={356}
+              className="h-9 w-auto"
+            />
           </Link>
 
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-semibold text-gray-700">
