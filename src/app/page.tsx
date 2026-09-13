@@ -1,8 +1,23 @@
+import Hero from "@/components/home/Hero";
+import Services from "@/components/home/Services";
+import ValueProps from "@/components/home/ValueProps";
+import RecentProjects from "@/components/home/RecentProjects";
+import AboutPreview from "@/components/home/AboutPreview";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import Faq from "@/components/home/Faq";
+import ContactCtaBanner from "@/components/shared/ContactCtaBanner";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold">1st Building Constructor LTD</h1>
-      <p className="mt-4 text-lg">Website coming soon.</p>
-    </main>
+    <>
+      <Hero />
+      <Services />
+      <ValueProps />
+      <RecentProjects />
+      <AboutPreview />
+      <WhyChooseUs />
+      <Faq />
+      <ContactCtaBanner />
+    </>
   );
 }
