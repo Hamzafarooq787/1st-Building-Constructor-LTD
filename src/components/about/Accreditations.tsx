@@ -11,7 +11,7 @@ const BADGES = [
 
 export default function Accreditations() {
   return (
-    <section className="py-14 sm:py-16 bg-white">
+    <section className="py-14 sm:py-16 bg-gray-50">
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-1">
           <span className="text-brand-maroon text-xs uppercase tracking-widest font-semibold">
@@ -25,7 +25,7 @@ export default function Accreditations() {
           {BADGES.map((badge) => {
             const Icon = badge.icon;
             return (
-              <div key={badge.title} className="bg-gray-50 p-4 rounded-xl text-center space-y-2">
+              <div key={badge.title} className="bg-white p-4 rounded-xl text-center space-y-2 shadow-sm">
                 <Icon className="w-8 h-8 text-brand-maroon mx-auto" aria-hidden="true" />
                 <div className="text-xs font-bold uppercase text-gray-900">{badge.title}</div>
                 <div className="text-[11px] text-gray-500">{badge.subtitle}</div>

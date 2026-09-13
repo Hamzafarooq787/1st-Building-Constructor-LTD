@@ -70,15 +70,17 @@ export default function Services() {
                 key={service.title}
                 className="bg-white border border-gray-200 rounded-lg overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative h-40 sm:h-44 overflow-hidden">
-                  <Image
-                    alt={service.alt}
-                    src={service.image}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
-                  />
-                  <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-brand-maroon border-2 border-white flex items-center justify-center text-white shadow-md">
+                <div className="relative h-40 sm:h-44">
+                  <div className="absolute inset-0 overflow-hidden">
+                    <Image
+                      alt={service.alt}
+                      src={service.image}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-brand-maroon border-2 border-white flex items-center justify-center text-white shadow-md z-10">
                     <Icon className="w-5 h-5" aria-hidden="true" />
                   </div>
                 </div>
