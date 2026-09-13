@@ -25,8 +25,7 @@ const PROJECTS = [
   },
   {
     title: "Groundworks",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCnOuEPBBZXvEmHbCGzOwSCxuzkM36Vh8___0njR6551lSMR7VbosnNQGFEMhJuriXYeJ8Mpetn-ek5PY_YurKsYnP8tYkGT49qH66xvNa3osugbzcvTfJ21-9rxvYOvyI5tN4MVE1ceoTm9AaM_w4ikHZp9NpU7hKbj1-svhgWRefWn2YHsKF8oYUOr9Eq2a5Sw75ewwZmHUhdxwbrTqhK6WFVGJOhZnLXKMECeWk_D8vMhCyU309Y",
+    image: "/images/recent-project-groundworks.webp",
     alt: "Foundation and concrete trench Groundworks",
   },
 ];

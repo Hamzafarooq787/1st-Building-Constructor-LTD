@@ -96,7 +96,7 @@ export default function ServicesPage() {
           "Structural Steel Beam Integrations",
           "Open-plan entertaining zones",
         ]}
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuANGqf9yx10SmVEQeKqzs77Hl588CP2jUzc5RFN-X-uWOoqsvopB3LQ5V_hlpmIDcMJVvDwv3r06B1hkqjKF3kx-mmpJzMuBI6SM0ivOMz-0TLkGZlklzUeCdqVytOZj7UVhidNicgoEEsG6k8hHNqxX1UKSJKpiE5RyypwkBq-eRE2OFYZPWpZYD-7ah9vsd9z-GF2DL_ZmcNHyMxSxY0kzVUKvukAEwt7lEU5hSoMoUXfCrR8Thfb"
+        image="/images/extensions-service-detail.webp"
         imageAlt="Architectural single-storey home extension with floor-to-ceiling sliding glass doors"
         caseRef="Case Reference #EXT-112"
         caseTitle="Wraparound Kitchen & Garden Living • Richmond TW10"
@@ -118,7 +118,7 @@ export default function ServicesPage() {
           "Bespoke architectural staircases",
           "Acoustic soundproofing & fire barriers",
         ]}
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuDp8rcWmT7ki3pz3p3AaMSAKfRUWBfw90-mTEfUuSGEJjFMKIZhYgcS0pJh_pNdsp-65p6wsmqQpoIoNaqNg-3gPLtBS49MXfqSZ6cYEXO1s0eI-RHnHY-5Jo2GYb4NEEJUqeVmoiBAQdN8X9TerOfsevOvKcGDRfSIuf9muk2djPTa0mmW9zE0u6fr3MsrgAre34DdJ6fWMyzjcEfwFZX-wx2L4kedx-YDc3JMUkpCltTGzs7rQavj"
+        image="/images/loft-conversions-service-detail.webp"
         imageAlt="Luxury attic loft conversion with exposed timber beams and velux roof windows"
         caseRef="Case Reference #LC-883"
         caseTitle="Mansard Suite with Marble Ensuite • Wandsworth SW18"
@@ -138,7 +138,7 @@ export default function ServicesPage() {
           "Subsidence repair & mass concrete underpinning",
           "Full Building Control certification",
         ]}
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuCb-RsVM-JgSc4SR6nVlKK4aAK8H9dy7InFlqfN8juAyD71RQnSbyRR-zY-MYlCIUAarjeKeDPj9S30KXO07hGxvn05sPJNpOlFNIv3tzK7lPitaR1zKdLBr3etsb9__3YFG1BMdHLeVIU9uuNZi6WRctEcgbFWIFVRVySepLD5WwihRdvmkOlvu7UCZz9gno_Oacd-QxF5xIKrt5tELT9zD9DHkjVuru251_Na9WIH9HVuAQirvvjW"
+        image="/images/structural-works-service-detail.webp"
         imageAlt="Heavy duty structural engineering steel frame installation with RSJ beams"
         caseRef="Case Reference #ST-550"
         caseTitle="Multi-Story Steel Portal Frame • Hampstead NW3"
@@ -160,7 +160,7 @@ export default function ServicesPage() {
           "Site excavation & clearance",
           "Retaining walls & paving",
         ]}
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuCzucQ_UdmsY-vK8fROWKVrveQFM9liM-p2KJrrJesX3epTEVc-7vZbk9ZvKNA5PfwGFJ4CAwXGyiz2IU30panIkHhzwXQSAU-KjOMR6JQaKYXwpEmjL4-Tgap3mxWJN6lgSRi8PPw8BBSyeEg22ULjUxlh8176NtzaEjUNud6Y6fT64IA58AyS7lDbxU9RaeYhxoL7qR-JX1w6NJ4RVEq7ckgPHyoMvUIEpkkqYQh3OVxbeblEYnam"
+        image="/images/groundworks-service-detail.webp"
         imageAlt="Construction site groundworks with excavator preparing foundation trenches"
         caseRef="Case Reference #GW-290"
         caseTitle="Piled Raft Foundation & Drainage • Dulwich SE21"

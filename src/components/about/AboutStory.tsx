@@ -75,7 +75,7 @@ export default function AboutStory() {
                 <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px]">
                   <Image
                     alt="On-site British construction director and surveyors reviewing architectural blueprints on a wooden trestle table at a sunny London jobsite"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9IWXYGS9m-i588_iwXP1mGRb3utvD3T3c05TciAsBw-3PU-nz4Bk74RSvHJbwxKTjkKrerB8uX9TOMOicAJE96Y34ey2qvpGNHwavoy3kSXK-FhTHk5Q3oa-fZz3x7ZWiZqKT6Q_a269SNetsHO0YfB-s9_6h-VkYLFMJroWKomQ5Xk0Egm18nVTTfmkSB80VbS3_mNDAFOZk24kDaxZH1Aam_ppBXIqrhpOwqYiq6fmSiCm0r3_u"
+                    src="/images/about-hero-story.webp"
                     fill
                     className="object-cover object-top"
                     sizes="(min-width: 1024px) 50vw, 100vw"

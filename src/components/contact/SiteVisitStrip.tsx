@@ -33,7 +33,7 @@ export default function SiteVisitStrip() {
               <div className="relative w-full h-56 sm:h-64">
                 <Image
                   alt="Construction site managers and structural engineers reviewing architectural blueprints at a London residential build site"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgTYt7-Wc2JWSL6g4Auw8tkm3Uo0pyzRRb1Y_uF-Dm81FeLo0p4OWvZ8AlrnL0riRbkozlYhahQstXeuOgChfESTTfNwY7_1SJSrs_i2raPqYGFdvfBNR-t1blXWiBQsqfXtFvg1ikfOX3eqdO0JD4Br9sADU5MWymIPSsaC6TfpDbSlGMY21eAyL3iWJRtKvNnPvFO20RJ8-fjqlm4W7QMxpy98chzf0ri8c22KwMJkCPWZp24uiu"
+                  src="/images/contact-site-visit-strip.webp"
                   fill
                   className="object-cover"
                   sizes="(min-width: 768px) 40vw, 100vw"
