@@ -1,4 +1,4 @@
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, Mail, ArrowRight } from "lucide-react";
 
 export default function ContactCtaBanner() {
   return (
@@ -26,6 +26,12 @@ export default function ContactCtaBanner() {
                 <Phone className="w-4 h-4" aria-hidden="true" />
               </span>
               <span>+44 (0) 7960 957 008</span>
+            </a>
+            <a className="flex items-center gap-3 hover:text-pink-200 transition-colors" href="mailto:john@1st-bc.com">
+              <span className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
+                <Mail className="w-4 h-4" aria-hidden="true" />
+              </span>
+              <span>john@1st-bc.com</span>
             </a>
           </div>
 

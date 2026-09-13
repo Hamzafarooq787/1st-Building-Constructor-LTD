@@ -1,4 +1,4 @@
-import { Headset, Phone, MapPin, ShieldCheck, Wrench, Receipt } from "lucide-react";
+import { Headset, Phone, Mail, MapPin, ShieldCheck, Wrench, Receipt } from "lucide-react";
 
 const AREAS = [
   "Central London",
@@ -47,12 +47,28 @@ export default function ContactDetails() {
           </div>
         </div>
 
+        <div className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+          <Mail className="w-5 h-5 text-brand-maroon mt-0.5 shrink-0" aria-hidden="true" />
+          <div className="flex flex-col">
+            <span className="text-xs uppercase tracking-wider text-gray-500">Email Direct</span>
+            <a className="text-sm font-semibold text-gray-900 hover:text-brand-maroon transition-colors" href="mailto:john@1st-bc.com">
+              john@1st-bc.com
+            </a>
+          </div>
+        </div>
+
         <div className="flex items-start gap-4 p-4 rounded-lg bg-gray-50">
           <MapPin className="w-5 h-5 text-brand-maroon mt-0.5 shrink-0" aria-hidden="true" />
           <div className="flex flex-col">
             <span className="text-xs uppercase tracking-wider text-gray-500">London Operations Office</span>
             <p className="text-sm font-medium text-gray-900 mt-0.5">1st Building Contractors Ltd</p>
-            <p className="text-sm text-gray-500">Wimbledon Hill Road, London SW19 7PA</p>
+            <p className="text-sm text-gray-500">
+              61 Amersham Road
+              <br />
+              London
+              <br />
+              RM3 9HX
+            </p>
             <span className="inline-flex items-center gap-1 text-xs text-brand-maroon mt-1 font-semibold">
               <MapPin className="w-3 h-3" aria-hidden="true" /> Greater London &amp; Home Counties
             </span>
