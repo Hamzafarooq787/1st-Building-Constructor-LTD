@@ -1,16 +1,68 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { ArrowRight, CheckCircle2, Lock, UploadCloud } from "lucide-react";
+import { ArrowRight, CheckCircle2, Lock } from "lucide-react";
 
 const inputClasses =
   "w-full bg-gray-50 px-4 py-3 rounded-lg text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-brand-maroon transition-all";
+
+const WHATSAPP_NUMBER = "447960957008";
+
+const SERVICE_LABELS: Record<string, string> = {
+  extensions: "Home & Rear Extensions",
+  loft: "Loft & Mansard Conversions",
+  new_build: "Architectural New Build",
+  structural: "Structural Works & RSJ Beams",
+  groundworks: "Groundworks, Piling & Basements",
+  full_refurb: "Full High-End Refurbishment",
+  commercial: "Commercial Contracting",
+};
+
+const BUDGET_LABELS: Record<string, string> = {
+  "30k_75k": "£30,000 – £75,000",
+  "75k_150k": "£75,000 – £150,000",
+  "150k_300k": "£150,000 – £300,000",
+  "300k_plus": "£300,000+",
+  unsure: "Need Feasibility Advice",
+};
+
+const PLAN_LABELS: Record<string, string> = {
+  approved: "Yes – Approved",
+  in_planning: "In Planning",
+  need_architect: "No – Need Guidance",
+};
 
 export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const data = new FormData(event.currentTarget);
+
+    const fullName = data.get("full_name")?.toString().trim() ?? "";
+    const phoneNumber = data.get("phone_number")?.toString().trim() ?? "";
+    const email = data.get("email_address")?.toString().trim() ?? "";
+    const postcode = data.get("project_postcode")?.toString().trim() ?? "";
+    const serviceType = data.get("service_type")?.toString() ?? "";
+    const budget = data.get("estimated_budget")?.toString() ?? "";
+    const planStatus = data.get("plan_status")?.toString() ?? "";
+    const description = data.get("project_description")?.toString().trim() ?? "";
+
+    const lines = [
+      "New Quote Request — 1st Building Contractors Ltd",
+      "",
+      `Name: ${fullName}`,
+      `Phone: ${phoneNumber}`,
+      email ? `Email: ${email}` : null,
+      `Project Postcode: ${postcode}`,
+      `Service: ${SERVICE_LABELS[serviceType] ?? serviceType}`,
+      budget ? `Budget: ${BUDGET_LABELS[budget] ?? budget}` : null,
+      planStatus ? `Architectural drawings: ${PLAN_LABELS[planStatus] ?? planStatus}` : null,
+      description ? `Project details: ${description}` : null,
+    ].filter((line): line is string => Boolean(line));
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
 
@@ -21,8 +73,8 @@ export default function QuoteForm() {
         <div className="space-y-2 mb-8">
           <h2 className="text-xl sm:text-2xl font-black text-gray-900">Request a Detailed Quote</h2>
           <p className="text-sm text-gray-600">
-            Provide preliminary details regarding your property and architectural vision. We will review your
-            requirements and reach out within 24 hours.
+            Provide preliminary details regarding your property and architectural vision. Submitting will open
+            WhatsApp with your details ready to send to our estimating desk.
           </p>
         </div>
 
@@ -153,33 +205,11 @@ export default function QuoteForm() {
             />
           </div>
 
-          <div className="space-y-1.5">
-            <label className="text-sm text-gray-900 font-semibold block">
-              Attach Architectural Drawings or Sketches (Optional)
-            </label>
-            <div className="relative bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg p-5 flex flex-col items-center justify-center text-center cursor-pointer group">
-              <input
-                accept=".pdf,.jpg,.jpeg,.png,.dwg"
-                className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
-                multiple
-                type="file"
-              />
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-brand-maroon shadow-sm group-hover:scale-105 transition-transform mb-2">
-                <UploadCloud className="w-5 h-5" aria-hidden="true" />
-              </div>
-              <p className="text-sm text-gray-900 font-medium">
-                <span className="text-brand-maroon font-semibold underline">Click to upload</span> or drag and drop
-                drawings
-              </p>
-              <p className="text-[11px] text-gray-500 mt-0.5">PDF, JPG, PNG, or CAD files up to 25MB total</p>
-            </div>
-          </div>
-
           <button
             className="w-full inline-flex items-center justify-center gap-2 bg-brand-maroon hover:bg-brand-maroonDark text-white py-4 px-8 rounded-lg font-bold uppercase tracking-wide shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
             type="submit"
           >
-            <span>Submit Quote Request</span>
+            <span>Send Quote Request via WhatsApp</span>
             <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </button>
 
@@ -187,10 +217,10 @@ export default function QuoteForm() {
             <div className="p-4 rounded-lg bg-green-50 text-gray-900 flex items-start gap-3" role="status">
               <CheckCircle2 className="w-5 h-5 text-brand-maroon shrink-0" aria-hidden="true" />
               <div className="space-y-0.5">
-                <p className="text-sm font-bold text-gray-900">Request Successfully Transmitted</p>
+                <p className="text-sm font-bold text-gray-900">WhatsApp Opened</p>
                 <p className="text-sm text-gray-600">
-                  Our lead QS will review your project details and contact you within 24 hours to coordinate your
-                  survey.
+                  Your project details are ready in a new WhatsApp chat — hit send there and our lead QS will
+                  respond within 24 hours to coordinate your survey.
                 </p>
               </div>
             </div>
